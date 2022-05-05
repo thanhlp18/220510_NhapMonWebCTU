@@ -1,0 +1,93 @@
+/* Style main cho form đăng nhập và đăng kí*/
+
+body{
+    background: linear-gradient(#00d2ff,#928dab);
+}
+
+/* Style thẻ chứa nội dung form */
+.container {
+    border-radius: 10px;
+    padding: 50px 0;
+}
+
+/* Style tiêu đề form */
+.form__title{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    text-transform: uppercase;
+}
+
+/* Form-log là form đăng nhập hoặc đăng kí đây là thành phần dùng chung*/
+.form-log{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(231, 58, 139), rgb(206, 45, 4));
+    padding: 30px 0;
+    margin: 0 300px;
+    border-radius: 10px;
+}
+
+/* Thành phần chứa các thẻ nhập thông tin và thông điệp */
+.form-row {
+    width: 90%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+/* Sử dụng flexbox cho form-row */
+[class^='form-row']{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style input-mail, và password */
+.input-mail,.input-password{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Cho hiệu ứng shadow của button về mặc định */
+.btn{
+    box-shadow: initial;
+}
+
+/* Style xác thực của form */
+.form-row--xacthuc{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px){
+    /* Thay đổi khoảng cách form đáp ứng*/
+    .form-log{
+        padding: 30px 0;
+        margin: 0 100px;
+    }
+}
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px) {
+
+    /* Thay đổi khoảng cách form đáp ứng*/
+    .form-log{
+        padding: 30px 0;
+        margin: 0 20px;
+    }
+}

@@ -1,0 +1,173 @@
+
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+     /* Introduce */
+     .introduce{
+        height: 350px;
+    }
+
+    /* Change space */
+    .introduce__recruit{
+        left: 40px;
+    }
+
+    /* Thay đổi cỡ chữ đáp ứng */
+    .introduce__recruit > h1{
+        font-size: 50px;
+    }
+
+    /* Style tiêu đề cấp 2 */
+    .introduce__recruit > h2{
+        font-size: 30px;
+        margin-right: 70px;
+        text-align: justify;
+        padding: 0;
+    }    
+
+    /* Phần nội dung */
+    /* Thiết lập bố cục đáp ứng */
+    .member__content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: initial;
+        grid-gap: 20px;
+        padding: 40px;
+        grid-template-areas: 
+            initial;
+        ;
+    }
+
+    /* Style tiêu đề */
+    .member__title{
+        grid-area: initial;
+        font-size: 35px;
+        padding-top: 20px;
+    }
+
+    /* Đưa các phần tử con về mặc định của grid */
+    .content__img{
+        grid-area: initial;
+    }
+
+    /* Đưa về mặc định */
+    .content__des{
+        font-size: 22px;
+        grid-area: initial;
+    }
+
+    /* Thiết lập bố cục đáp ứng grid cho nội dung benefit */
+    .benefit{
+        display: grid;
+        grid-gap: 20px;
+        padding: 40px;
+    }
+
+    /* Change font-size title */
+    .benefit__title{
+        font-size: 25px;
+    }
+
+    /* Thay đổi cỡ chữ button đáp ứng */
+    .btn{
+        font-size: 15px;
+    }
+
+    /* Chang font-size */
+    .contactus__title{
+        font-size: 35px;
+    }
+}
+
+/* 
+    -> Những thuộc tính của mobile cần thay đổi cũng tương tự của tablet 
+*/
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px){
+    /* Introduce */
+    .introduce{
+        height: 350px;
+    }
+    .introduce__recruit{
+        left: 40px;
+    }
+    .introduce__recruit > h1{
+        font-size: 40px;
+    }
+    .introduce__recruit > h2{
+        font-size: 20px;
+        margin-right: 70px;
+        text-align: justify;
+        padding: 0;
+    }
+    /* main */
+    .member__content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: initial;
+        grid-gap: 20px;
+        padding: 20px 20px;
+        grid-template-areas: 
+            initial;
+        ;
+    }
+    .member__title{
+        grid-area: initial;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .content__img{
+        grid-area: initial;
+    }
+    .content__des{
+        font-size: 18px;
+        grid-area: initial;
+    }
+    /* ------ */
+    .benefit{
+        display: grid;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .benefit__title{
+        font-size: 18px;
+    }
+    /* ---- */
+    .current-position{
+        padding: 50px 0;
+    }
+    .current-position__title{
+        font-size: 30px;
+    }
+    .current-position__content{
+        margin: 0 20px;
+        padding: 20px 0;        
+    }
+    .current-position__des,.current-position__staff{
+        font-size: 15px;
+    }
+    .btn{
+        width: 100px;
+        padding: 8px 10px 8px;
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    .contactus__title{
+        font-size: 30px;
+        margin: 0 20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .contactus__manager{
+        font-size: 25px;
+        width: 280px;
+    }
+}

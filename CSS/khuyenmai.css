@@ -1,0 +1,99 @@
+/* Style - introduce */
+.introduce__recruit{
+    color: yellow;
+    text-shadow: 5px 5px rgb(12, 112, 104);
+}
+
+/* Style tiêu đề khuyến mãi */
+.chicken-title{
+    text-align: center;
+    background: linear-gradient(to left, blueviolet, rgb(70, 169, 202));
+    color: white;
+    padding: 10px 20px;
+    margin: 70px 25% 0;
+    line-height: 1.5;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: #808080 10px 10px 10px 0px;
+    font-size: 30px;
+}
+
+/* Thiết lập bố cục sử dụng grid-layout*/
+.chicken-sale{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px;
+}
+
+/* Phần nội dung của chicken-sale */
+.chicken-discount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed orange;
+    padding: 50px 0;
+    position: relative;
+    color: red;
+}
+
+/* Set border cho đẹp mắt sử dụng nthchild() */
+.chicken-discount:nth-child(1),.chicken-discount:nth-child(4),.chicken-discount:nth-child(7){
+    border-left: none;
+}
+.chicken-discount:nth-child(3),.chicken-discount:nth-child(6),.chicken-discount:nth-child(9){
+    border-right: none;
+}
+.chicken-discount:nth-child(1),.chicken-discount:nth-child(2),.chicken-discount:nth-child(3){
+    border-top: none;
+}
+.chicken-discount:nth-child(7),.chicken-discount:nth-child(8),.chicken-discount:nth-child(9){
+    border-bottom: none;
+}
+.chicken-discount:nth-child(n+5) >  .discount-img{
+    padding: 30px;
+}
+
+/* Set tiêu đề giảm giá */
+.discount-title{
+    font-size: 23px;
+    text-shadow: 2px 2px yellow;
+}
+
+/* Set img */
+.discount-img{
+   width: 268px;
+   height: 268px;
+}
+
+/* Style giá tiền */
+.discount-money{
+    font-size: 30px;
+    padding: 25px;
+    position: relative;
+    animation: quay 0.9s infinite linear;
+}
+
+/* Animation giá tiền chuyển động -> Làm nổi bật */
+@keyframes quay {
+    0%{top:0;left:0;}
+    50%{top:0;left: 20px;}
+    100%{top:0;left:0;}
+}
+
+/* Style số phần trăm giảm giá sử dụng position */
+.discount-percent{
+    position: absolute;
+    font-size: 30px;
+    padding: 3px 10px;
+    top: 20px;
+    right: 25px;
+    color: white;
+    background: linear-gradient(to right,orange,red);
+    border-radius: 10px;
+}
+
+/* Hover */
+.discount-percent:hover{
+    background-color: black;
+    color: white;
+}

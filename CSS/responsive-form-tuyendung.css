@@ -1,0 +1,106 @@
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Style form title */
+    .form__title{
+        font-size: 25px;
+        margin: 0 40px;
+    }
+
+    /* Set lại grid đáp ứng */
+    .infor-recruit{
+        grid-template-columns: 1fr;
+        margin: 40px 20px;
+    }
+
+    /* Set width cho img shipper */
+    .img-shipper{
+        width: 500px;
+    }
+}
+
+/* 
+    -> Những thuộc tính của mobile cần thay đổi cũng tương tự của tablet 
+*/
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px){
+    .recruit-title{
+        font-size: 30px;
+    }
+    .introduce{
+        height: 350px;
+    }
+    .introduce__recruit{
+        left: 40px;
+    }
+    .infor-recruit{
+        grid-template-columns: 1fr;
+        margin: 40px 20px;
+    }
+    .img-shipper{
+        width: 300px;
+    }
+    @keyframes run {
+        0%{top: 0; left: 0;}
+        50%{top:0; left: 50px}
+        100%{top: 0; left: 0;}
+    }
+    .form__title{
+        font-size: 25px;
+    }
+    .btn{
+        grid-area: initial;
+        font-size: 18px;
+    }
+    .container{
+        border-radius: 0px;
+    }
+    /* Grid */
+    .form-recruit{
+        grid-template-columns: 1fr;
+        grid-template-areas: initial;
+    }
+    .form-g1{
+        grid-area:initial;
+    }
+    .form-g2{
+        grid-area:initial;
+    }
+    .form-g3{
+        grid-area:initial;
+    }
+    .form-g4{
+        grid-area:initial;
+    }
+    .form-g5{
+        grid-area:initial;
+    }
+    .form-g6{
+        grid-area:initial;
+    }
+    .form-g7{
+        grid-area:initial;
+    }
+    .form-g8{
+        grid-area:initial;
+    }
+    .form-g9{
+        grid-area:initial;
+    }
+    .form-g10{
+        grid-area: initial;
+    }
+    .form-g11{
+        grid-area: initial;
+    }
+    .form-g12{
+        grid-area: initial;
+    }
+}

@@ -1,0 +1,158 @@
+/* Responsive - HEADER - FOOTER */
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    /* RESPONSIVE - HEADER */
+
+    /* Thay đổi khoảng cách phù hợp thiết bị */
+    .navbar{
+        padding: 20px 25px !important;
+    }
+
+    /* Thay đổi width của logo và ẩn animation đi*/
+    .header__logo{
+        animation: initial;
+        width: 130px;
+    }
+
+    /* Change space */
+    .navbar-nav{
+        padding: 5px 0 !important;
+    }
+
+    /* Change space */
+    .navbar-toggler{
+        padding: 0 !important;
+    }
+    /* Nút bấm hiện menu */
+    .navbar-toggler-icon{
+        display: block !important;
+        border: none !important;
+        background-color: white !important;
+        border-radius: 2px !important;
+        padding: 20px !important;
+        transition: background-color 0.3s linear !important;
+        margin-left: 8px !important;
+    }
+
+    /* Thiết kế bố cục đáp ứng tablet */
+    .nav-bar-main{
+        display: initial !important;
+    }
+    /* Hover */
+    .navbar-toggler-icon:hover{
+        background-color: rgb(76, 237, 248) !important;
+    }
+
+    /* FOOTER */
+    /* Thiêt kế phù hợp với khung hình tablet */
+    .content__footer{
+        grid-template-columns: 1fr;
+        grid-template-areas: initial;
+        grid-gap: 40px;
+        padding: 30px 0;
+    }
+    [class^='footer__']{
+        grid-area: initial;
+    }
+    .footer__address,.footer__time{
+        text-align: center;
+    }
+}
+/* responsive - mobile - iphone6/7/8plus*/
+@media (max-width: 739px) {
+
+    /* RESPONSIVE - HEADER */
+
+    /* Thay đổi khoảng cách phù hợp thiết bị */
+    .navbar{
+        padding: 10px 25px !important;
+    }
+
+    /* Thay đổi width của logo và ẩn animation đi*/
+    .header__logo{
+        animation: initial;
+        width: 100px;
+    }
+
+    /* Set các icon của nav-bar nhỏ lại */
+    .nav-icon>i{
+        font-size: 28px !important;
+    }
+
+    /* Change space */
+    .navbar-nav{
+        padding: 5px 0 !important;
+    }
+
+    /* Change space */
+    .navbar-toggler{
+        padding: 0 !important;
+    }
+
+    /* Nút bấm hiện menu khi có responsive */
+    .navbar-toggler-icon{
+        display: block !important;
+        border: none !important;
+        padding: 18px !important;
+        background-color: white !important;
+        margin-left: 8px;
+        border-radius: 2px !important;
+        transition: background-color 0.3 linear !important;
+    }
+
+    /* Khi hover có màu xanh da trời nhạt */
+    .navbar-toggler-icon:hover{
+        background-color: rgb(76, 237, 248) !important;
+    }
+
+    /* Thiết kế layout phù hợp thiết bị */
+    .nav-bar-main{
+        display: initial !important;
+    }
+
+    /* Change font-sive của các icon là con của nav-item */
+    .nav-item>i{
+        font-size: 25px !important;
+    }
+
+    /* RESPONSIVE - FOOTER */
+
+    /* Change layout phù hợp với thiết bị */
+    .content__footer{
+        grid-template-columns: 1fr;
+        grid-template-areas: initial;
+        grid-gap: 40px;
+        padding: 30px;
+    }
+
+    /* Đưa bố cục về mặc định 1 hàng 1 cột*/
+    [class^='footer__']{
+        grid-area: initial;
+    }
+
+    /* Căn đều chữ của footer */
+    .footer__address,.footer__time{
+        text-align: center;
+    }
+
+    /* Change font-size */
+    .footer__copyright{
+        font-size: 15px;
+    }
+
+    /* Thiết lập footer - top-Back đáp ứng khi người dùng cuộn đến cuối trang và muốn trở về đầu trang */
+    .footer-top{
+        position: absolute;
+        bottom: 90px;
+        right: 10px;
+        width: 60px;
+    }
+}

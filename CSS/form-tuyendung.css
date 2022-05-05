@@ -1,0 +1,153 @@
+/* Tạo bố cục cho phần giới thiệu - Grid */
+.infor-recruit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 80px 100px 80px 0;
+}
+
+/* Style img shipper */
+.img-shipper{
+    position: relative;
+    animation: run 1.3s ease-in-out infinite;
+}
+
+/* Animation shipper run */
+@keyframes run {
+    0%{top: 0; left: 0;}
+    50%{top:0; left: 80px}
+    100%{top: 0; left: 0;}
+}
+
+/* Style nội dung */
+.infor__content{
+    font-size: var(--fontSize);
+    padding: 0 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+/* Thiết lập flex */
+.infor__salary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Tạo khoảng cách */
+.location-1,.dealine-time{
+    padding: 10px 0;
+}
+
+/* Tạo khoảng cách */
+.infor__salary,.infor__location{
+    border-bottom: 2px solid grey;
+}
+
+/* Tạo khoảng cách */
+.infor__content>article{
+    padding: 25px 0;
+}
+
+
+/* Phần form */
+/* Style tiêu đề form */
+.form__title{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgb(219, 153, 31);
+}
+
+/* Style container chứa form */
+.container {
+    background: linear-gradient(to right, blueviolet, rgb(9, 129, 168));
+    padding: 40px 0 30px 0;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/* Style form-row item */
+.form-row{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+}
+
+/* Thiết lập flex */
+[class^='form-row']{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Select tag */
+select{
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Tạo khoảng cách */
+.message--space{
+    padding-top: 10px;
+}
+/* Phần nội dung thông tin cách lề trên dưới 12px trái phải 20px */
+.experience{
+    padding: 12px 20px;
+}
+
+/* GRID - Layout */
+.form-recruit{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-areas: 
+        "g1  g1  g1"
+        "g2  g3  g4"
+        "g5  g6  g6"
+        "g7  g8  g9"
+        "g10 g10 g10"
+        "g11 g11 g11"
+        "g12 g12 g12"
+    ;
+}
+.form-g1{
+    grid-area: g1;
+}
+.form-g2{
+    grid-area: g2;
+}
+.form-g3{
+    grid-area: g3;
+}
+.form-g4{
+    grid-area: g4;
+}
+.form-g5{
+    grid-area: g5;
+}
+.form-g6{
+    grid-area: g6;
+}
+.form-g7{
+    grid-area: g7;
+}
+.form-g8{
+    grid-area: g8;
+}
+.form-g9{
+    grid-area: g9;
+}
+.form-g10{
+    grid-area: g10;
+}
+.form-g11{
+    grid-area: g11;
+    padding-top: 15px;
+}
+.form-g12{
+    grid-area: g12;
+}
+input[type=submit]{
+    background-color: green;
+}

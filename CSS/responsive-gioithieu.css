@@ -1,0 +1,100 @@
+
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Introduce */
+
+    /* Thay đổi bố cục */
+    .introduce__recruit{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    /* Set font-size nhỏ đi */
+    .recruit-title{
+        font-size: 40px;
+    }
+
+    /* Thay đổi width của img nội dung */
+    .recruit-img{
+        width: 250px;
+    }
+
+    /* Phần nội dung */
+    /* Thay đổi bố cục đáp ứng thiết bị */
+    [class^='introduce-trademark-']{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        padding: 50px 50px 0;
+    }
+
+    /* Bố cục được thay đổi ở 2 nội dung */
+    .introduce-trademark-2,.introduce-trademark-4{
+        grid-template-areas: 
+            "h1"
+            "h2"
+        ;
+    }
+
+    /*Thiết lập thay đổi bằng thuộc tính grid-area cho 2 nội dung cần thay đổi*/
+    .introduce-trademark-2>.introduce-trademark__content , .introduce-trademark-4>.introduce-trademark__content{
+        grid-area: h1;
+    }
+    .introduce-trademark-2>.introduce-trademark__img,  .introduce-trademark-4>.introduce-trademark__img{
+        grid-area: h2;
+    }
+    
+    /* Nội dung cuối cách footer 50px */
+    .introduce-trademark-4:last-child{
+        padding-bottom: 50px;
+    }
+}
+
+/* 
+    -> Những thuộc tính của mobile cần thay đổi cũng tương tự của tablet 
+*/
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px) {
+
+     /* Introduce */
+     .introduce__recruit{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .recruit-title{
+        font-size: 30px;
+    }
+    .recruit-img{
+        width: 200px;
+    }
+    /* Phần nội dung */
+    [class^='introduce-trademark-']{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 30px 30px 0;
+    }
+    .introduce-trademark-2,.introduce-trademark-4{
+        grid-template-areas: 
+            "h1"
+            "h2"
+        ;
+    }
+    .introduce-trademark-2>.introduce-trademark__content , .introduce-trademark-4>.introduce-trademark__content{
+        grid-area: h1;
+    }
+    .introduce-trademark-2>.introduce-trademark__img,  .introduce-trademark-4>.introduce-trademark__img{
+        grid-area: h2;
+    }
+    .introduce-trademark-4:last-child{
+        padding-bottom: 30px;
+    }
+}

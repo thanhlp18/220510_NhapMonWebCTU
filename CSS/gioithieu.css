@@ -1,0 +1,97 @@
+/* Style - Introduce */
+
+/* Style - img */
+.recruit-img{
+    width: 350px;
+    border-radius: 200px;
+    animation: spinner 1.5s ease-out infinite;
+}
+
+/* Animation logo phụ của thương hiệu quay 360 độ  */
+@keyframes spinner {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Style bố cục cho phần giới thiệu */
+.introduce__recruit{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    left: 0;
+}
+
+/* Style bố cục cho phần nội dung trang web */
+[class^='introduce-trademark-']{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    font-size: var(--fontSize);
+    place-items: center;
+    padding: 80px 100px 0;
+}
+
+/* Căn giữa  */
+.introduce-trademark__content{
+    text-align: center;
+}
+
+/* Nội dung thông điệp */
+.content-des{
+    text-align: justify;
+    line-height: 1.5;
+    background-color: #f4f2f2;
+    padding: 20px;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+/* Set màu và background cho mỗi tiêu đề của mỗi nội dung */
+.des-style--ls,.style--ls{
+    background: linear-gradient(to right, rgb(48, 219, 176), rgb(48, 235, 79));   
+}
+.des-style--ckd,.style--chicken-dev{
+    background: linear-gradient(to right,blueviolet,rgb(67, 227, 233));
+}
+.des-style--kk,.style--kk{
+    background: linear-gradient(to right,#FF6A88,#FF99AC);
+}
+.des-style--nt,.style--nt{
+    background: linear-gradient(to right,#F76B1C,#FAD961);
+}
+
+/* Thay đổi màu chữ của thương hiệu */
+.chicken-dev{
+    color: yellow;
+}
+
+/* Tên nội dung */
+.chicken-dev-name{
+    font-size: var(--font-size-title);
+    color: #fff;
+    line-height: 2.5;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+/* Set img của nội dung */
+.introduce-trademark__img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+    align-self: stretch;
+}
+
+/* Nội dung cuối cách footer 80px */
+.introduce-trademark-4:last-child{
+    padding-bottom: 80px;
+}
+
+/* Set height cho hình ảnh nội dung */
+.img--height{
+    height: 500px;
+}

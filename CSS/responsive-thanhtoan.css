@@ -1,0 +1,114 @@
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+@media (min-width: 740px) and (max-width: 1023px){
+
+    /* Introduce */
+
+    /* Thay đổi khoảng cách tiêu đề phần giới thiệu */
+    .recruit-title{
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+    /* Thay đổi khoảng cách phần thông điệp của phần giới thiệu */
+    .recruit-des{
+        margin-right: 20px;
+    }
+
+
+    /* Phần nội dung */
+
+    /* Change space đáp ứng */
+    .hoadon{
+        padding: 40px;
+    }
+
+    /* Set khoảng cách cho cái item grid */
+    .item-box{
+        grid-gap: 20px;
+    }
+
+    /* Set item-img có chiều ngang bằng 100% thẻ cha chứa nó */
+    .item-image{
+        width: 100%;
+    }
+
+    /* Style đáp ứng -  thông tin món ăn vừa đặt hàng */
+    .item-detail{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    /* Đặt lại cỡ chữ đáp ứng */
+    .item-title,.item-money{    
+        font-size: 30px;
+    }
+    .item-sl{
+        font-size: 25px;
+    }   
+
+    /* Tạo bố cục đáp ứng */
+    .formThongtinTT{
+        padding: 30px 0;
+        margin: 0 100px;
+    }
+}
+
+/* 
+    -> Những thuộc tính của mobile cần thay đổi cũng tương tự của tablet 
+*/
+/* Responsive - mobile - iphone678plus */
+@media (max-width: 739px) {
+
+     /* Introduce */
+     .introduce__recruit{
+        left: 30px;
+    }
+     .recruit-title{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .recruit-des{
+        font-size: 30px;
+        margin-right: 20;
+    }
+    /* Phần nội dung */
+    .item-box{
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    .hoadon{
+        padding: 40px 30px;
+    }
+    .item-image{
+        width: 100%;
+        justify-items: stretch;
+    }
+    .item-detail{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .item-title,.item-money{    
+        font-size: 30px;
+    }
+    .item-sl{
+        font-size: 25px;
+    }   
+
+    /* Phần form*/
+    .formThongtinTT{
+        padding: 30px 0;
+        margin: 0 20px;
+    }
+}

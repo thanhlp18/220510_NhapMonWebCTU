@@ -1,0 +1,71 @@
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px){
+
+    /* Introduce */
+
+    /* Thay đổi khoảng cách phù hợp với thiết bị */
+    .introduce__recruit{
+       left: 50px;
+    }
+
+    /* Change space */
+    .recruit-des--space{
+        margin-right: 0;
+    }
+
+    /* Phần nội dung */
+
+    /* Thay đổi bố cục đáp ứng trên thiết bị */
+    .rice-chicken{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 40px 20px;
+        grid-gap: 20px;
+    }
+}
+/* 
+    -> Những thuộc tính của mobile cần thay đổi cũng tương tự của tablet 
+*/
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px){
+     /* Introduce*/
+     .introduce__recruit{
+        left: 50px;
+     }
+    .recruit-title{
+        font-size: 50px;
+    }
+    .recruit-des--space{
+        margin-right: 20px;
+    }
+    .recruit-des{
+        font-size: 30px;
+    }
+    /* Phần nội dung */
+    .rice-chicken{
+        grid-template-columns: 1fr;
+        padding: 30px;
+        grid-gap: 30px;
+    }
+    .manager-btn{
+        flex-direction: column;
+        padding: 0;
+        padding-top: 30px;
+        margin: 0 100px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .btn+.btn{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}

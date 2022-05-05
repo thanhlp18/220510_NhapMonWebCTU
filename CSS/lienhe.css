@@ -1,0 +1,101 @@
+/* Style - nội dung */
+
+/* Tạo bố cục cho thẻ chứa nội dung - GRID */
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px 50px;
+    grid-gap: 20px;
+}
+
+/* Tạo space cho map */
+.map{
+    line-height: 2;
+    font-size: var(--fontSize);
+}
+
+/* Style tiêu đề cho map */
+.map__tile{
+    text-align: center;
+    color: red;
+}
+
+/* Style hình ảnh của map */
+.map__hometown{
+    width: 100%;
+    padding-top: 10px;
+    height: 800px;
+    border-radius: 10px;
+}
+
+/* Tạo khoảng cách */
+.map-address, .number-phone{
+    margin-left: 10px;
+}
+
+/* Style làm nổi bật địa chỉ */
+.map-icon,.phone-icon{
+    background-color: black;
+    color: yellow;
+    padding: 15px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Change space */
+.map__street{
+    margin-bottom: 10px;
+}
+
+/* Hove */
+.map-icon:hover, .phone-icon:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+/* Phần form */
+
+/* Thiết lập style cho thẻ chứa form */
+.container {
+    background-color: rgb(53, 47, 47);    
+    border-radius: 10px;
+    padding: 30px 0;
+}
+
+/* Thay đổi 1 số thuộc tính của button */
+.btn{
+    margin: 0 30px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+/* Style tiêu đề form */
+.form__title{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px yellow;
+}
+
+/* Style form main của nội dung sử dụng Flex-Box Layout */
+.formLienHe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Form-row chứa các thành phần cơ bản input và trạng thái sau khi điền form */
+.form-row {
+    width: 90%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 5px auto;
+    border: 3px solid rgb(40, 243, 209);
+}
+
+/* Tạo bố cục cho form-row sử dụng flex-box */
+[class^='form-row']{
+    display: flex;
+    flex-direction: column;
+}

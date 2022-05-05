@@ -1,0 +1,135 @@
+/* Phần nội dung*/
+
+/* Tạo bố cục nội dung thứ 1 sử dụng Grid-Layout */
+.member__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 700px;
+    grid-gap: 50px;
+    padding: 50px 100px;
+    place-items: center;
+    grid-template-areas: 
+    "h1 h1"
+    "h2 h3";
+    ;
+}
+
+/* Style Grid-h1 */
+.member__title{
+    grid-area: h1;
+    font-size: var(--font-size-title);
+    color: #f83703;
+}
+
+/* Style Grid-h2 */
+.content__img{
+    width: 100%;
+    height: 100%;
+    grid-area: h2;
+}
+
+/* Style Grid-h3 */
+.content__des{
+    font-size: var(--fontSize);
+    text-align: justify;
+    line-height: 1.3;
+    grid-area: h3;
+}
+
+/* Tạo bố cục nội dung thứ 2 sử dụng Grid-Layout */
+.benefit{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "h1 h1 h1"
+        "h2 h3 h4"
+    ;
+    place-items: center;
+    align-content: center;
+    grid-gap: 50px;
+    padding:0 100px 50px 100px;
+    text-align: center;
+}
+
+/* Style Grid-h1 */
+.benefit__title{
+    grid-area: h1;
+    font-size: var(--font-size-title);
+    text-transform: uppercase;
+}
+/* Style Grid-h2 */
+.benefit__salary{
+    grid-area: h2;
+}
+
+/* Style Grid-h3 */
+.benefit__develop{
+    grid-area: h3;
+}
+
+/* Style Grid-h4 */
+.benefit__environment{
+    grid-area: h4;
+}   
+
+/* Style tiêu đề của nội dung thứ 3 */
+.salary__title,
+.develop__title,
+.environment__title{
+    font-size: var(--fontSize);
+    padding-top: 20px;
+}
+
+/* Thẻ chứa nội dung thứ 3 */
+.current-position{
+    background-color: #f4f2f2;
+    padding: 80px 0;
+}
+
+/* Tạo bố cục flex-layout cho nội dung thứ 3 */
+.current-position__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+    margin: 0 100px;
+    padding: 50px 0;
+}
+
+/* Style tiêu đề nội dung thứ 3 */
+.current-position__title{
+    text-align: center;
+    font-size: var(--font-size-title);
+    text-transform: uppercase;
+    color: #f83703;
+}
+
+/* Style thông điệp nội dung thứ 3 */
+.current-position__staff,.current-position__des{
+    font-size: var(--fontSize);
+}
+
+/* Tạo bố cục nội dung thứ 4 sử dụng FLex-layout */
+.contactus{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    align-items: center;
+}
+
+/* Style tiêu đề nội dung thứ 4 */
+.contactus__title{
+    font-size: var(--font-size-title);
+    color: #f83703;
+    margin-bottom: 30px;
+}
+
+/* Style thông tin quản lý của nhà hàng Chicken-DEV*/
+.contactus__manager{
+    color: white;
+    width: 330px;
+    font-size: 30px;
+    padding: 8px 0 8px 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(43, 19, 8),rgb(87, 92, 94));
+}

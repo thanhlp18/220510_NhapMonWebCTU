@@ -1,0 +1,83 @@
+/* Form-main chứa các thuộc tính css là các thành phần dùng chung của các form trong trang web */
+
+/* Style cho các thẻ cần thiết */
+input,textarea,select{
+    padding-left: 20px;
+    outline: none;
+    border: 2px solid grey !important;
+}
+
+/* Khi focus */
+input:focus, textarea:focus, select:focus{
+    border: 2px solid green !important;
+}
+
+/* Style các thẻ input,email,.... */
+input[type=text],
+input[type=email],.input-password{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Các thẻ submit, reset,.... */
+input[type=submit],
+input[type=reset] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 1px auto;
+}
+
+/* Khi hover */
+input[type=submit]:hover,
+input[type=reset]:hover{    
+    background-color: #45a049;    
+}
+
+/* Trạng thái thành công */
+.form-row.success input{
+    border: 2px solid green;    
+}
+
+/* Sử dụng lớp giả tạo content để thông báo trạng thái hợp lệ */
+.form-row.success .message::before{
+    color: rgb(38, 231, 20);
+    content:" Hợp lệ";
+    font-weight: 900; 
+    font-size: 1em;
+    visibility: visible;    
+}
+
+/* Thông báo trạng thái error khi người dùng nhập không đúng thông tin lập trình viên mong muốn */
+.form-row.error input{
+    border: 2px solid red;
+}
+
+/* Style cho thông điệp của form */
+.form-row .message{
+    visibility: hidden;
+    margin: 2px 0 12px 0;
+    font-weight: bold;
+    font-size: 11px;
+    font-size: 16px;
+}
+
+/* Ẩn đi khi không cần thiết */
+.form-row.error .message{
+    visibility: visible;
+    color: red;
+}
+
+/* Nội dung thông điệp - textarea các lề trên 10px */
+.message--space{
+    padding-top: 10px;
+}

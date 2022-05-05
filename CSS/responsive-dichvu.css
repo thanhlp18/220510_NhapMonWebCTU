@@ -1,0 +1,76 @@
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px){
+
+    /* Introduce */
+    /* Thay đổi khoảng cách đáp ứng */
+    .recruit-des--space{
+        margin-right: 50px;
+    }
+
+    /* Set font-size tiêu đề của giới thiệu */
+    .recruit-title{
+        font-size: 50px;
+    }
+
+    /* Phần nội dung */
+    /* Tạo bố cục đáp ứng */
+    .member__content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h1"
+        "h2"
+        "h3"
+        "h4"
+        ;
+    }
+
+    /* Căn giữa tiêu đề nội dung */
+    .member__title{
+        text-align: center;
+    }
+}
+
+/* 
+    -> Những thuộc tính của mobile cần thay đổi cũng tương tự của tablet 
+*/
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px){
+    /* Introduce*/
+    .recruit-des--space{
+        margin-right: 50px;
+    }
+    .recruit-title{
+        font-size: 40px;
+    }
+    .recruit-des{
+        font-size: 30px;
+    }
+    .introduce__recruit{
+        left: 30px;
+    }
+    
+    /* Phần nội dung*/
+    .member__content{
+        padding: 30px;
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h1"
+        "h2"
+        "h3"
+        "h4"
+        ;
+    }
+    .member__title{
+        text-align: center;
+        font-size: 30px;
+    }
+}

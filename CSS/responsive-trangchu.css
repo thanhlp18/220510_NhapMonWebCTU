@@ -1,0 +1,77 @@
+
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px){
+
+     /* Phần Introduce*/
+     /* Thay đổi khoảng cách cho phù hợp với thiết bị */
+     .introduce__recruit{
+        left: 150px;
+    }
+
+    /* Phần nội dung */
+    /* Thay đổi bố cục grid */
+    .advertise{
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        padding: 40px;
+    }
+    /* Change space đáp ứng với trang web*/
+    .advertise__nutrition{
+        padding: 0 30px;
+    }
+}
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px){
+
+     /* Phần Introduce*/
+     /* Thay đổi khoảng cách cho phù hợp với thiết bị */
+     .introduce__recruit{
+        left: 25px;
+    }   
+
+    /* Set font-size cho thông điệp */
+    .recruit-des{
+        font-size: 30px;
+    }
+
+    /* Set font-size cho giá tiền */
+    .recruit-money{
+        font-size: 80px;
+    }
+
+    /* Phần nội dung*/
+    /* Thay đổi bố cục Grid */
+    .advertise{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 30px;
+    }
+
+    /* Change space */
+    .advertise__nutrition{
+        padding:0 30px;
+    }
+
+    /* Style tiêu đề của phần nội dung */
+    .advertise-title{
+        font-size: 24.6px;
+        text-align: center;
+    }
+    /* Căn điều các đoạn văn bản đáp ứng thiết bị */
+    .advertise-dess{
+        text-align: justify;
+    }
+    
+    /* Set size nút bấm nhỏ lại */
+    .btn{
+        font-size: 20px;
+    }
+}

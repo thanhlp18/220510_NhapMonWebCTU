@@ -1,0 +1,104 @@
+/* Style - introduce */
+.introduce__recruit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+/* Style giá tiền*/
+.recruit-money{
+    color: red;
+    font-size: 100px;
+    text-shadow:#ffffff 1px 5px 0px;
+    animation: noi 0.4s infinite ease-in-out;
+    position: relative;
+}
+
+/* Animation nổi bật giá tiền */
+@keyframes noi {
+    0%{left:0;top:0;}
+    50%{left:20px;}
+    100%{left:0;top:0;}
+}
+
+/* Style tiêu đề */
+.recruit-title{
+    color: yellow;
+    text-shadow: 2px 2px rgb(12, 112, 104);
+    font-size: 38px;
+    text-transform: uppercase;
+    padding-bottom: 0;
+}
+
+/* Style thông điệp */
+.recruit-des{
+    margin-right: 0;
+    text-shadow:red 1px 5px 0px;
+    line-height: 0;
+}
+
+/* Style phần nội dung của trang */
+
+/* GRID */
+.advertise{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 50px 100px;
+    place-items: center;
+}
+
+/* Style bố cục cho phần tử con của grid */
+.advertise__nutrition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid red;
+    padding: 30px;
+    height: 500px;
+    justify-content: space-evenly;
+    transition: background-color 0.8s linear, color 0.8s linear;
+}
+
+/* Khi hover */
+.advertise__nutrition:hover{
+    background-color: black;
+    color: white;
+    border-color: rgb(14, 3, 65);
+}
+
+/* Style đổi màu  */
+.advertise__nutrition:hover > .chicken-icon{
+        color: white;
+        border: 4px solid white;
+}
+
+/* Style đổi màu */
+.advertise__nutrition:hover > .advertise-title{
+    color: yellow;
+    text-shadow: 2px 2px rgb(12, 112, 104);
+}
+
+/* Set color cho các icon */
+.chicken-icon,.calendar-icon,.star-icon,.hea-icon{
+    color: red;
+    font-size: 40px;
+    border: 4px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Set kích thước phông chữ cho tiêu đề */
+.advertise-title{
+    font-size: 30px;
+}
+
+/* Căn giữa và set font-size */
+.advertise-dess{
+    text-align: center;
+    font-size: var(--fontSize);
+}

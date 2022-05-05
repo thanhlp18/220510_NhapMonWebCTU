@@ -1,0 +1,73 @@
+/* Tạo khoảng cách cho thông điệp */
+.recruit-des--space{
+    margin-right: 600px;
+}
+
+/* Sử dụng Grid tạo bố cục cho nội dung */
+.rice-chicken{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 100px;
+    grid-gap: 50px;
+}
+
+/* Các nội dung của món ăn sử dụng flex-Layout */
+[class^='rice-chicken__infor-']{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+/* Style img */
+.rice-img{
+    border-radius: 11px 11px 0px 0px;
+    height: 250px;
+}
+
+/* Tên món ăn */
+.rice-name{
+    color: red;
+    text-shadow: 2px 2px yellow;
+    padding-top: 20px;
+}
+
+/* Thông tin chi tiết món ăn */
+.rice-detail{
+    padding: 0 20px;
+    font-size: var(--fontSize);
+    line-height: 2;
+    border: 1px solid grey;
+    border-top-color: transparent;
+    box-shadow: 0 6px rgb(73, 22, 22);
+}
+
+/* Style phần thanh toán */
+.rice-pay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+/* Style giá tiền */
+.rice-price{
+    color: red;
+    font-size: 25px;
+}
+
+/* Thay đổi kích thước của button */
+.btn--size{
+    font-size: var(--fontSize);
+}
+
+/* Style container manager của các button */
+.manager-btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* Tạo space cho các phần tử button tính từ phần tử thứ 2 trở đi*/
+.btn+.btn{
+    margin-left: 40px;
+}

@@ -1,0 +1,104 @@
+
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Introduce */
+
+    /* Thay đổi kích thước đáp ứng */
+    .recruit-title{
+        font-size: 60px;
+    }
+
+    /* Thay đổi khoảng cách thông điệp*/
+    .recruit-des{
+        margin-right: 0;
+    }
+
+    /* Phần nội dung */
+    
+    /* Tiêu đề giảm giá */
+    .chicken-title{
+        padding: 10px 20px;
+        margin: 50px 50px 0;
+    }
+
+    /* Change space */
+    .chicken-sale{
+        padding: 50px 0;
+    }
+
+    /* Change space */
+    .chicken-discount{
+        padding-bottom: 30px;
+    }
+
+    /* Thay đổi kích thước img đáp ứng */
+    .discount-img{
+        width: 200px
+    }
+
+    /* Style tiêu đề giảm giá */
+    .discount-title{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Style số phần trăm giảm giá */
+    .discount-percent{
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/* 
+    -> Những thuộc tính của mobile cần thay đổi cũng tương tự của tablet 
+*/
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px) {
+    /* Introduce */
+    .recruit-title{
+        font-size: 40px;
+    }
+    .recruit-des{
+        font-size: 30px;
+        margin-right: 0;
+    }
+    .introduce__recruit{
+        left: 30px;
+    }
+
+    /* Phần nội dung */
+    .chicken-title{
+        font-size: 25px;
+        margin: 50px 50px 0;
+    }   
+    .chicken-sale{
+        padding: 50px 20px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .chicken-discount{
+        border: 4px dotted rgb(255, 136, 0) !important;
+        padding-bottom: 30px;
+    }
+    .discount-title{
+        text-align: center;
+    }
+    .discount-percent{
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .chicken-discount:nth-child(n+5) >  .discount-img{
+        padding: 50px;
+    }
+}

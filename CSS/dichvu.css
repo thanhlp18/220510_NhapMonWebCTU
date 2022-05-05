@@ -1,0 +1,55 @@
+/* Thay đổi khoảng cách thích ứng - Introduce */
+.recruit-des--space{
+    margin-right: 600px;
+}
+
+/* Tạo bố cục content sử dụng grid-layout */
+.member__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    padding: 50px 100px;
+    place-items: center;
+    grid-template-areas: 
+    "h1 h1"
+    "h2 h3"
+    "h4 h4"
+    ;
+}
+
+/* Thay đổi màu nền của nội dung member2 */
+.member--bg{
+    background-color: #f4f2f2;
+}
+
+/* Style cho tiêu đề */
+.member__title{
+    grid-area: h1;
+    font-size: var(--font-size-title);
+    color: #f83703;
+}
+
+/* Thiết lập grid cho các item con của nội dung */
+.content__img{
+    width: 100%;
+    height: 500px;
+    grid-area: h2;
+}
+
+/* Style img */
+.content__img--size{
+    height: auto;
+}
+
+/* Thiết lập grid cho item con */
+.content__des{
+    font-size: var(--fontSize);
+    text-align: justify;
+    line-height: 1.3;
+    grid-area: h3;
+}
+
+/* Grid-h4 */
+.lienhe{
+    grid-area: h4;
+}

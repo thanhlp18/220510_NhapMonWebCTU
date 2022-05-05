@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font-Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Grenze+Gotisch:wght@600&family=Signika:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap - Header -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/form-login-logout.css">
+    <link rel="stylesheet" href="/CSS/form-main.css">
+    <link rel="stylesheet" href="/CSS/responsive-header-footer.css">
+    <title>Chicken - DEV | Đăng kí</title>
+
+<body>
+    <!-- Phần đầu của trang web -->
+    <!-- Header sử dụng bootstrap 5 và đã có thêm class chỉnh sửa tùy biến phù hợp với trang web -->
+    <header class="header" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="/images/logo.png" alt="logo-header"
+                    class="header__logo"></a>
+            <div class="nav-bar-main">
+                <div class="menu-choose">
+                    <a class="nav-item nav-link active" href="lienhe.html">
+                        <i class="fas fa-phone-alt call-icon"></i>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link active" href="thanhtoan.html">
+                        <i class="fas fa-box-open box-icon">
+                            <span id="cart-number"></span></i><span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link active" href="dangnhap.html">
+                        <i class="fas fa-user user-icon"></i><span class="sr-only">(current)</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="index.html">Trang chủ<span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="gioithieu.html">Giới thiệu<span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="khuyenmai.html">Khuyến mãi<span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="thucdon.html">Thực đơn<span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="tuyendung.html">Tuyển dụng<span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="dichvu.html">Dịch vụ<span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="lienhe.html">Liên hệ<span
+                                class="sr-only">(current)</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Phần thân của trang web -->
+    <!-- 
+         - Main - container
+            + containe chứa form - item      
+
+        #Note: 
+            1. Phần form-log là form dùng chung cho đăng kí và đăng nhập
+    -->
+    <main class="main">
+        <div class="container">
+            <form class="formDangKi form-log">
+                <h2 class="form__title">Đăng kí</h2>
+
+                <div class="form-row">
+                    <input id="txt-name" type="text" class="input-name" placeholder="Họ tên (*)">
+                    <small class="message">Error Message</small>
+                </div>
+                <div class="form-row">
+                    <input id="txt-phone" type="text" class="input-phone" placeholder="Số điện thoại (*)">
+                    <small class="message">Error Message</small>
+                </div>
+                <div class="form-row">
+                    <input id="txt-email" type="email" class="input-mail" placeholder="Email">
+                    <small class="message">Error Message</small>
+                </div>
+                <div class="form-row">
+                    <input id="txt-password" type="password" class="input-password" placeholder="Mật khẩu">
+                    <small class="message">Error Message</small>
+                </div>
+                <div class="form-row">
+                    <input id="txt-password2" type="password" class="input-password" placeholder="Nhập lại mật khẩu">
+                    <small class="message">Error Message</small>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn btn--size">Đăng kí</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Phần chân trang -->
+    <!-- 
+       - Footer - container
+            + content__footer - item1
+            + footer__copyright - item2
+            + footer-top - item3
+
+        #Note: 
+            1. Phần content_footer sử dụng kĩ thuật Grid-Layout
+            2. Phần footer-top sử dụng position để đưa phần web đang ở cuối trang về đầu trang
+    -->
+    <footer class="footer">
+        <section class="content__footer">
+            <article class="footer__address">
+                <h2 class="address__title">VĂN PHÒNG CƠM GÀ CHICKEN-DEV</h2>
+                <p class="address__street">Ấp Phú An, thị trấn Phú Hòa, huyện Thoại Sơn, tỉnh An Giang.</p>
+            </article>
+            <article class="footer__phone">
+                <p class="phone__title">Gọi ngay</p>
+                <p class="phone__number">0342<span class="space">040</span>063</p>
+            </article>
+            <article class="footer__time">
+                <p class="time-open">Giờ mở cửa: 09:00 - 22:00</p>
+                <p class="time-ship">Giờ giao hàng: 09:00 - 19:00</p>
+                <p class="time-sunday">Mở cửa vào cả ngày LỄ và CHỦ NHẬT.</p>
+            </article>
+            <article class="footer__order">
+                <div class="order__title">Bạn cũng có thể đặt hàng tại:</div>
+                <div class="order">
+                    <a href="https://food.grab.com/vn/en/" target="_blank">
+                        <img src="/images/icon-grabfood.svg" class="order-grab">
+                    </a>
+                    <a href="https://shopeefood.vn/" target="_blank">
+                        <img src="/images/icon-now.svg" class="order-now">
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section class="footer__copyright">
+            © Copyright 2021 <strong class="chicken-dev chicken-dev--color">Cơm Gà Chicken-DEV</strong>.
+            All rights reserved
+        </section>
+        <a href="#top"><img src="/images/top.png" alt="top" class="footer-top"></a>
+    </footer>
+
+    <!-- Phần JavaScrip và Bootstrap  -->
+    <!-- 
+        #Note: 
+            1. Ở 3 script cuối cùng là của bootstrap để sử dụng cho header
+            2. Các script còn lại để phục vụ cho các mục đích khác nhau của trang web
+     -->
+    <script src="/JS/main.js"></script>
+    <script src="/JS/validationForm.js"></script>
+    <script src="/JS/dangki.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

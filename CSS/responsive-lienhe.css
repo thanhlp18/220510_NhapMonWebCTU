@@ -1,0 +1,79 @@
+/* 
+    #Note:
+        - Thiết kế web đáp ứng trên 2 thiết bị 
+            + Ở máy tính bảng - Tablet -> IPAD
+            + Ở điện thoại thông minh - Mobile - Iphone 6/7/8plus
+*/
+
+/* responsive - tablet - ipad */
+@media (min-width: 740px) and (max-width: 1023px){
+
+    /* Introduce */
+    /* Change space đáp ứng */
+    .introduce__recruit{
+        left: 60px;
+    }
+
+    /* Change space */
+    .recruit-des{
+        margin-right: 0;
+    }
+
+    /* Phần nội dung */
+
+    /* Thay đổi bố cục đáp ứng - Grid */
+    .contact-us{
+        grid-template-columns: 1fr;
+        padding: 40px;
+        grid-gap: 40px;
+    }
+
+    /* Thay đổi button đáp ứng */
+    .btn{
+        margin: 0 38px;
+        margin-top: 8px;
+        font-size: 18px;
+    }
+}
+
+/* 
+    -> Những thuộc tính của mobile cần thay đổi cũng tương tự của tablet 
+*/
+
+/* responsive - mobile - iphone6/7/8plus */
+@media (max-width: 739px) {
+
+     /* Introduce*/
+     .introduce__recruit{
+        left: 40px;
+    }
+    .recruit-title{
+        font-size: 50px;
+    }
+    .recruit-des{
+        font-size: 35px;
+        margin-right: 0;
+    }
+    /* Phần nội dung */
+    .contact-us{
+        grid-template-columns: 1fr;
+        padding: 30px;
+        grid-gap: 30px;
+    }
+    .form__title{
+        font-size: 30px;
+        margin: 0 40px;
+        padding:10px 0 20px;
+    }
+    .btn{
+        margin: 0 19px;
+        margin-top: 8px;
+        font-size: 18px;
+    }
+    .map-address,.number-phone{
+        display: block;
+    }
+    .map__street,.map__phone{
+        text-align: center;
+    }
+}
