@@ -16,7 +16,7 @@ function renderMenu(phanloai) {
 
             riceChickenMenu.innerHTML +=
                 `<div class="rice-chicken__infor-${count}">
-                <img src=${element.image} class="rice-img">
+                <img style="background-image: url(${element.image}); background-size: cover; background-repeat: no-repeat;" class="rice-img">
                 <div class = "rice-detail">
                     <h2 class = "rice-name">${element.name}</h2>
                    
