@@ -108,6 +108,9 @@ body{
 
 /* Set introduce */
 .introduce{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     z-index: 1;
     position: relative;
     height:500px;
@@ -122,9 +125,9 @@ body{
 /* Style thẻ chứa nội dung */
 .introduce__recruit{
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 75px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     color: white;
 }
 
@@ -136,7 +139,7 @@ body{
 
 /* Style thông điệp */
 .recruit-des{
-    font-size: var(--font-size-title);
+    /* font-size: var(--font-size-title); */
     margin-right: 400px;
     line-height: 1.5;
 }

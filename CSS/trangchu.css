@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    height: 400px;
+    /* justify-content: space-evenly; */
+    height: 200px;
 }
 
 /* Style giá tiền*/
@@ -37,7 +37,7 @@
 .recruit-des{
     margin-right: 0;
     text-shadow:red 1px 5px 0px;
-    line-height: 0;
+    /* line-height: 0; */
 }
 
 /* Style phần nội dung của trang */
