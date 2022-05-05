@@ -11,9 +11,9 @@
 
      /* Phần Introduce*/
      /* Thay đổi khoảng cách cho phù hợp với thiết bị */
-     .introduce__recruit{
+     /* .introduce__recruit{
         left: 150px;
-    }
+    } */
 
     /* Phần nội dung */
     /* Thay đổi bố cục grid */
@@ -31,11 +31,11 @@
 /* responsive - mobile - iphone6/7/8plus */
 @media (max-width: 739px){
 
-     /* Phần Introduce*/
+     /* Phần Introduce
      /* Thay đổi khoảng cách cho phù hợp với thiết bị */
-     .introduce__recruit{
+     /* .introduce__recruit{
         left: 25px;
-    }   
+    }   */
 
     /* Set font-size cho thông điệp */
     .recruit-des{

@@ -12,6 +12,8 @@
     - Các thành phần vừa nêu trên là các thành phần chung mà mỗi trang điều được sử dụng lại
 */
 
+
+
 /* Reset CSS */
 *{
     padding: 0;
@@ -27,18 +29,25 @@
     --fontSize: 20px;
     --bg-header-footer: #840906;
     --font-size-title: 42px;
+    --light-color: #fff;
+    --dark-color: #23272a;
+    --dark-color-second: #2c2f33;
+    --text-color: #99aab5;
+    --primary-color: #7289da;
+    --yellow-color: #ffc107;
 }
 
 /* Set font-family cho website */
 body{
-    font-family: 'Big Shoulders Stencil Display', cursive;
+    /* font-family: 'Big Shoulders Stencil Display', cursive;
     font-family: 'Grenze Gotisch', cursive;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Signika', sans-serif; */
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 /* Style - Header - Những thuộc tính đã thay đổi từ bootstrap */
 .navbar{
-    background-color: var(--bg-header-footer) !important;
+    background-color: var(--light-color) !important;
     padding: 0 25px !important;
     display: flex !important;
     justify-content: space-between !important;
@@ -71,7 +80,7 @@ body{
 /*Style-Navitem các link đến trang khác cũng sửa đổi từ bootstrap */
 .nav-item{
     padding: 10px 18px !important;
-    color: white !important;
+    color: var(--dark-color);
     font-size: var(--fontSize) !important;
 }
 
@@ -85,6 +94,7 @@ body{
 /* Set kích thước cho các icon là con trực tiếp của nav-item */
 .nav-item>i{
     font-size: 30px !important;
+    color: var(--primary-color);
 }
 
 /* Nút bấm khi header responsive */
@@ -156,7 +166,7 @@ body{
         2. Còn phần footer sẽ chứa cả Grid của content__footer và các nội dung khác
 */
 .content__footer{
-    background-color: var(--bg-header-footer);
+    background-color: var(--primary-color);
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -192,6 +202,7 @@ body{
     padding-bottom: 15px;
     font-size: 23px;
     color: yellow;
+    font-weight: 600;
 }
 
 /* Style phone -  Set grid-area cho item-2  */
@@ -203,9 +214,15 @@ body{
 /* Style phone liên hệ - Animation chuyển động trái phải */
 .phone__number{
     font-size: 40px;
+    font-weight: 600;
     color: yellow;
     position: relative;
     animation: noibat 0.4s infinite ease-in-out;
+}
+
+.phone__number:hover {
+    text-decoration: none;
+    color: yellow;
 }
 
 /* Animation cho phone__number */
@@ -251,7 +268,7 @@ body{
 /* style bản quyền */
 .footer__copyright{
     text-align: center;
-    background-color: #470b04;
+    background-color: var(--dark-color-second);
     color: white;
     padding: 20px 0;
     font-size: var(--fontSize);
@@ -274,10 +291,11 @@ body{
     border: none;
     padding: 10px 20px 8px;
     font-size: 25px;
+    font-weight: 600;
     border-radius: 6px;
-    background-color: #ff0000;
-    color: white;
-    box-shadow: #d60505 0px 8px 0px 0px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    box-shadow: rgba(0, 0, 0,0.1) 0px 0px 5px 2px;
     transition: color 0.6s, background-color 0.6s;
     cursor: pointer;
 }
@@ -323,3 +341,8 @@ body{
     background-color: white;
     border-radius: 5px;
 }
+
+/* .order {
+    background-color:var(--dark-color-second);
+} */
+

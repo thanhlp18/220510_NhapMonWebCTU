@@ -2,10 +2,11 @@
 .introduce__recruit{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     /* justify-content: space-evenly; */
     height: 200px;
+    margin-bottom: 40px;
 }
 
 /* Style giá tiền*/
@@ -26,8 +27,8 @@
 
 /* Style tiêu đề */
 .recruit-title{
-    color: yellow;
-    text-shadow: 2px 2px rgb(12, 112, 104);
+    /* color: var(--dark-color); */
+    /* text-shadow: 2px 2px rgb(12, 112, 104); */
     font-size: 38px;
     text-transform: uppercase;
     padding-bottom: 0;
@@ -56,7 +57,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid red;
+    border: 5px solid var(--primary-color);
     padding: 30px;
     height: 500px;
     justify-content: space-evenly;
@@ -65,9 +66,9 @@
 
 /* Khi hover */
 .advertise__nutrition:hover{
-    background-color: black;
-    color: white;
-    border-color: rgb(14, 3, 65);
+    background-color: var(--dark-color-second);
+    color: var(--light-color);
+    border-color: var(--primary-color);
 }
 
 /* Style đổi màu  */
@@ -78,15 +79,15 @@
 
 /* Style đổi màu */
 .advertise__nutrition:hover > .advertise-title{
-    color: yellow;
-    text-shadow: 2px 2px rgb(12, 112, 104);
+    color: var(--primary-color);
+    /* text-shadow: 2px 2px rgb(12, 112, 104); */
 }
 
 /* Set color cho các icon */
 .chicken-icon,.calendar-icon,.star-icon,.hea-icon{
-    color: red;
+    color: var(--primary-color);
     font-size: 40px;
-    border: 4px solid red;
+    border: 4px solid var(--primary-color);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -94,7 +95,9 @@
 
 /* Set kích thước phông chữ cho tiêu đề */
 .advertise-title{
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 800;
+    /* box-shadow: rgba(0, 0, 0,0.1) 0px 0px 5px 2px; */
 }
 
 /* Căn giữa và set font-size */
