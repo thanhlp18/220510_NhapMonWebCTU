@@ -26,7 +26,7 @@
 .member__title{
     grid-area: h1;
     font-size: var(--font-size-title);
-    color: #f83703;
+    color: var(--primary-color);
 }
 
 /* Thiết lập grid cho các item con của nội dung */

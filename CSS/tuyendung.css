@@ -18,7 +18,7 @@
 .member__title{
     grid-area: h1;
     font-size: var(--font-size-title);
-    color: #f83703;
+    color: var(--primary-color);
 }
 
 /* Style Grid-h2 */
@@ -101,7 +101,7 @@
     text-align: center;
     font-size: var(--font-size-title);
     text-transform: uppercase;
-    color: #f83703;
+    color: var(--primary-color);
 }
 
 /* Style thông điệp nội dung thứ 3 */
@@ -120,7 +120,7 @@
 /* Style tiêu đề nội dung thứ 4 */
 .contactus__title{
     font-size: var(--font-size-title);
-    color: #f83703;
+    color: var(--primary-color);
     margin-bottom: 30px;
 }
 
@@ -129,7 +129,7 @@
     color: white;
     width: 330px;
     font-size: 30px;
-    padding: 8px 0 8px 10px;
+    padding: 8px 0 8px 16px;
     border-radius: 10px;
     background: linear-gradient(to right, rgb(43, 19, 8),rgb(87, 92, 94));
 }

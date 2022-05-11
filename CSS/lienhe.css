@@ -17,7 +17,7 @@
 /* Style tiêu đề cho map */
 .map__tile{
     text-align: center;
-    color: red;
+    color: var(--primary-color);
 }
 
 /* Style hình ảnh của map */
@@ -35,8 +35,8 @@
 
 /* Style làm nổi bật địa chỉ */
 .map-icon,.phone-icon{
-    background-color: black;
-    color: yellow;
+    /* background-color: black; */
+    color: var(--primary-color);
     padding: 15px;
     width: 50px;
     text-align: center;
@@ -74,7 +74,7 @@
 .form__title{
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 10px yellow;
+    /* text-shadow: 2px 2px 10px yellow; */
 }
 
 /* Style form main của nội dung sử dụng Flex-Box Layout */
@@ -91,7 +91,7 @@
     background-color: #f2f2f2;
     padding: 10px;
     margin: 5px auto;
-    border: 3px solid rgb(40, 243, 209);
+    /* border: 3px solid rgb(40, 243, 209); */
 }
 
 /* Tạo bố cục cho form-row sử dụng flex-box */

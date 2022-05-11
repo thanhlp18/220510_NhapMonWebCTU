@@ -1,7 +1,7 @@
 /* Style main cho form đăng nhập và đăng kí*/
 
 body{
-    background: linear-gradient(#00d2ff,#928dab);
+    background-color: var(--dark )
 }
 
 /* Style thẻ chứa nội dung form */
@@ -23,7 +23,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(to right, rgb(231, 58, 139), rgb(206, 45, 4));
+    background-color: var(--primary-color);
     padding: 30px 0;
     margin: 0 300px;
     border-radius: 10px;

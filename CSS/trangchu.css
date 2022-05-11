@@ -66,15 +66,16 @@
 
 /* Khi hover */
 .advertise__nutrition:hover{
-    background-color: var(--dark-color-second);
+    /* background-color: var(--dark-color-second);
     color: var(--light-color);
-    border-color: var(--primary-color);
+    border-color: var(--primary-color); */
+    box-shadow: 0 0 30px 1px rgb(0 0 0 / 20%);
 }
 
 /* Style đổi màu  */
 .advertise__nutrition:hover > .chicken-icon{
-        color: white;
-        border: 4px solid white;
+        /* color: white;
+        border: 4px solid white; */
 }
 
 /* Style đổi màu */

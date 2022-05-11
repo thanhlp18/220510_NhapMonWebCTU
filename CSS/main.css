@@ -93,7 +93,7 @@ body{
 
 /* Set kích thước cho các icon là con trực tiếp của nav-item */
 .nav-item>i{
-    font-size: 30px !important;
+    font-size: 24px !important;
     color: var(--primary-color);
 }
 
@@ -134,17 +134,25 @@ body{
 
 /* Style thẻ chứa nội dung */
 .introduce__recruit{
-    position: absolute;
     /* top: 50%;
     left: 75px;
     transform: translateY(-50%); */
     color: white;
 }
 
+.introduce__recruit--center {
+    position: absolute;
+    top: 50%;
+    left: 75px;
+    transform: translateY(-50%);
+    color: white;
+}
+
 /* Style tiêu đề */
 .recruit-title{
-    font-size: 70px;
+    font-size: 54px;
     padding-bottom: 20px;
+    text-shadow: 2px 2px black;
 }
 
 /* Style thông điệp */
@@ -152,6 +160,7 @@ body{
     /* font-size: var(--font-size-title); */
     margin-right: 400px;
     line-height: 1.5;
+    text-shadow: 2px 2px black;
 }
 /* Kết thúc phần Style - Introduce */
 
@@ -200,7 +209,7 @@ body{
 /* Style Địa chỉ liên hệ */
 .address__title{
     padding-bottom: 15px;
-    font-size: 23px;
+    font-size: 22px;
     color: yellow;
     font-weight: 600;
 }
@@ -276,7 +285,7 @@ body{
 
 /* Style màu sắc cho tên thương hiệu */
 .chicken-dev{
-    color: #f83703;
+    color: var(--primary-color);
 }
 
 /*  Modifier màu sắc cho tên thương hiệu */
@@ -292,7 +301,7 @@ body{
     padding: 10px 20px 8px;
     font-size: 25px;
     font-weight: 600;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     background-color: var(--primary-color);
     color: var(--light-color);
     box-shadow: rgba(0, 0, 0,0.1) 0px 0px 5px 2px;
@@ -342,7 +351,9 @@ body{
     border-radius: 5px;
 }
 
-/* .order {
-    background-color:var(--dark-color-second);
-} */
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 

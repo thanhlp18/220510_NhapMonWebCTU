@@ -1,193 +1,193 @@
 
 const data = [
     {
-        "name": "Cơm gà chiên xù",
+        "name": "GST-B500GD-9A",
         "price": "25000",
-        "image": "/images/rice-chicken-1.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GST-B500GD-9A-removebg-preview.png",
+        "note": ["1 phần dưa chua", "  1 Phần cơm", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà nước mắm",
+        "name": "GA-100BP-1A ",
         "price": "29000",
-        "image": "/images/rice-chicken-2.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GA-100BP-1A_01.png",
+        "note": ["1 phần dưa chua", "  1 Phần cơm", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà sả ớt",
+        "name": "GA-2100-1A2",
         "price": "27000",
-        "image": "/images/rice-chicken-3.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GA-2100-1A2.png",
+        "note": ["ĐỒNG HỒ KIM-SỐ", "Dòng Neon Accent", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà xối mỡ",
+        "name": "GAE-2100RC-1A",
         "price": "30000",
-        "image": "/images/rice-chicken-10.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GAE-2100RC-1A.png",
+        "note": ["ĐỒNG HỒ KIM-SỐ", "DÒNG GA-2100", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà ớt chuông",
+        "name": "MRG-B5000B-1 ",
         "price": "35000",
-        "image": "/images/rice-chicken-11.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/MRG-B5000B-1.png",
+        "note": ["MR-G", "MRG-B5000 Serie", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà Thái Lan",
+        "name": "GA-2100-1A2",
         "price": "40000",
-        "image": "/images/rice-chicken-12.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GA-2100-1A2.png",
+        "note": ["ĐỒNG HỒ KIM-SỐ", "Dòng Neon Accent", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà lá dứa",
+        "name": "GA-2100-1A3",
         "price": "25000",
-        "image": "/images/rice-chicken-13.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GA-2100-1A3.png",
+        "note": ["ĐỒNG HỒ KIM-SỐ", "Dòng Neon Accent", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà phô mai",
+        "name": "GA-2100-1A4",
         "price": "50000",
-        "image": "/images/rice-chicken-14.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GA-2100-1A4.png",
+        "note": ["ĐỒNG HỒ KIM-SỐ", "Dòng Neon Accent", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà BBQ",
+        "name": "GA-2200SKL-4A ",
         "price": "65000",
-        "image": "/images/rice-chicken-15.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GA-2200SKL-4A.png",
+        "note": ["ĐỒNG HỒ KIM-SỐ", "Dòng Sound Wave", "G-SOCK"],
         "phanloai": "Cơm gà"
     },
     {
-        "name": "Cơm gà Chicken - DEV",
-        "price": "199000",
-        "image": "/images/rice-chicken-4.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "name": "BLX-565-2 ",
+        "price": " 500000",
+        "image": "./images/BLX-565-2.png",
+        "note": ["BLX-565 Series  ", " ", ""],
         "phanloai": "Cơm gà đặc biệt"
     },
     {
-        "name": "Cơm gà nguyên con",
+        "name": "BLX-565S-2 ",
         "price": "149000",
-        "image": "/images/rice-chicken-5.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/BLX-565S-2.png",
+        "note": ["BLX-565 Series", "", ""],
         "phanloai": "Cơm gà đặc biệt"
     },
     {
-        "name": "Cơm gà An Giang",
+        "name": "BGA-310-7A2 ",
         "price": "192000",
-        "image": "/images/rice-chicken-6.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/BGA-310-7A2_01.png",
+        "note": ["BGA-310 Series", "", ""],
         "phanloai": "Cơm gà đặc biệt"
     },
     {
-        "name": "Cơm gà Hội An",
+        "name": "BGA-310C-1A",
         "price": "195000",
-        "image": "/images/rice-chicken-16.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/BGA-310C-1A_01.png",
+        "note": ["BGA-310 Series", "", ""],
         "phanloai": "Cơm gà đặc biệt"
     },
     {
-        "name": "Cơm gà Nha Trang",
+        "name": "BGD-565S-7",
         "price": "200000",
-        "image": "/images/rice-chicken-17.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/BGD-565S-7.png",
+        "note": ["Baby G", "", ""],
         "phanloai": "Cơm gà đặc biệt"
     },
     {
-        "name": "Cơm gà kho bia 333",
+        "name": "BGA-310C-3A        ",
         "price": "192000",
-        "image": "/images/rice-chicken-18.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/BGA-310C-3A_01.png",
+        "note": ["BGA-310 Series  ", " ", ""],
         "phanloai": "Cơm gà đặc biệt"
-    },
+},
     {
-        "name": "Đùi gà mật ong",
+        "name": "BA-130SP-4A",
         "price": "230000",
-        "image": "/images/rice-chicken-19.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/BA-130SP-4A_1.png",
+        "note": ["DÒNG BA-130 ", "", ""],
         "phanloai": "Cơm gà đặc biệt"
     },
     {
-        "name": "Gà hấp lá trúc",
+        "name": "BGD-560WL-7",
         "price": "250000",
-        "image": "/images/rice-chicken-20.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/BGD-560WL-7.png",
+        "note": ["Dòng BGD-560        ", "", ""],
         "phanloai": "Cơm gà đặc biệt"
     },
     {
-        "name": "Gà đốt ô thum",
+        "name": "BGA-275-5A        ",
         "price": "350000",
-        "image": "/images/rice-chicken-21.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/BGA-275-5A.png",
+        "note": ["Dòng BGA-275        ", "",""],
         "phanloai": "Cơm gà đặc biệt"
     },
 
     {
-        "name": "Cánh gà chiên giòn",
+        "name": "MTG-B3000B-1A  ",
         "price": "80000",
-        "image": "/images/rice-chicken-7.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/MTG-B3000B-1A_JF.png",
+        "note": ["MTG-B3000 Series ", "MT-G ", ""],
         "phanloai": "Món phụ"
     },
     {
-        "name": "Khoai tay chiên",
+        "name": "MTG-B3000BD-1A ",
         "price": "50000",
-        "image": "/images/rice-chicken-8.jpg",
-        "note": ["1 phần nước uống", "  1 Phần khoai tây", "1 phần tặng thêm"],
+        "image": "./images/MTG-B3000BD-1A_JF.png",
+        "note": ["MTG-B3000 Series ", "MT-G ", ""],
         "phanloai": "Món phụ"
     },
     {
-        "name": "Humberger",
+        "name": "GMA-S2200M-4A_01",
         "price": "100000",
-        "image": "/images/rice-chicken-9.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GMA-S2200M-4A_01.png",
+        "note": ["G-Shock", "ĐỒNG HỒ KIM-SỐ ", ""],
         "phanloai": "Món phụ"
     },
     {
-        "name": "Khoai lắc rong biển",
+        "name": "GA-B2100-2A ",
         "price": "30000",
-        "image": "/images/rice-chicken-22.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GA-B2100-2A.png",
+        "note": ["ĐỒNG HỒ KIM-SỐ ", "D&ograve;ng 2100 ", ""],
         "phanloai": "Món phụ"
     },
     {
-        "name": "Mì Ý",
+        "name": "GBD-200UU-9 ",
         "price": "80000",
-        "image": "/images/rice-chicken-23.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GBD-200UU-9.png",
+        "note": ["GBD-200UU-9  ", "G-SQUAD", ""],
         "phanloai": "Món phụ"
     },
     {
-        "name": "Pizza",
+        "name": "GST-B500GD-9A        ",
         "price": "120000",
-        "image": "/images/rice-chicken-24.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GST-B500GD-9A.png",
+        "note": ["GST-B500 Series ", "G-STEEL", ""],
         "phanloai": "Món phụ"
     },
     {
-        "name": "Hot dog",
+        "name": "GA-B2100C-9A",
         "price": "30000",
-        "image": "/images/rice-chicken-25.jfif",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GA-B2100C-9A.png",
+        "note": ["ĐỒNG HỒ KIM-SỐ  ", "D&ograve;ng 2100 ", ""],
         "phanloai": "Món phụ"
     },
     {
-        "name": "Bánh gạo",
+        "name": "GLX-5600RT-9",
         "price": "80000",
-        "image": "/images/rice-chicken-26.jfif",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GLX-5600RT-9.png        ",
+        "note": ["Dòng GLX-5600 ", "G-LIDE", ""],
         "phanloai": "Món phụ"
     },
     {
-        "name": "Mì cay",
+        "name": "GST-B500BD-1A",
         "price": "400000",
-        "image": "/images/rice-chicken-27.jpg",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GST-B500BD-1A_01.png ",
+        "note": ["GST-B500GD-9A ", "GST-B500 Series        ", ""],
         "phanloai": "Món phụ"
     }
 ]
@@ -195,74 +195,74 @@ const data = [
 
 const dataKM = [
     {
-        "name": "2 MIẾNG GÀ GIÒN",
-        "price": "60000",
-        "image": "/images/discount-1.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "name": "Đồng hồ treo tường ",
+        "price": "600000",
+        "image": "./images/IQ-05-1.png",
+        "note": ["", " ", ""],
         "phanloai": "Khuyến mãi",
         "discount": "10"
     },
     {
-        "name": "4 MIẾNG GÀ GIÒN",
+        "name": "DQ-541-1R",
         "price": "115000",
-        "image": "/images/discount-2.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/DQ-541-1R.png",
+        "note": ["", " ", ""],
         "phanloai": "Khuyến mãi",
         "discount": "12"
     },
     {
-        "name": "6 MIẾNG GÀ GIÒN",
+        "name": "MTP-B120GL-7AV",
         "price": "175000",
-        "image": "/images/discount-3.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/MTP-B120GL-7AV.png",
+        "note": ["", "", ""],
         "phanloai": "Khuyến mãi",
         "discount": "15"
     },
     {
-        "name": "CƠM GÀ GIÒN",
+        "name": "MTP-B310BL-1AV",
         "price": "60000",
-        "image": "/images/discount-4.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/MTP-B310BL-1AV.png",
+        "note": ["", " ", ""],
         "phanloai": "Khuyến mãi",
         "discount": "20"
     },
     {
-        "name": "2 GÀ GIÒN + KHOAI TÂY",
+        "name": "MTP-B125B-8AV        ",
         "price": "50000",
-        "image": "/images/discount-5.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/MTP-B125B-8AV.png",
+        "note": ["", "", ""],
         "phanloai": "Khuyến mãi",
         "discount": "50"
     },
     {
-        "name": "GÀ GIÒN + SÚP BÍ ĐỎ",
+        "name": "MTP-E600B-1B        ",
         "price": "80000",
-        "image": "/images/discount-6.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/MTP-E600B-1B.png",
+        "note": ["", " ", ""],
         "phanloai": "Khuyến mãi",
         "discount": "8"
     },
     {
-        "name": "GÀ GIÒN + NƯỚC NGỌT",
+        "name": "LTP-VT02BL-2A        ",
         "price": "90000",
-        "image": "/images/discount-7.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/LTP-VT02BL-2AU.png" ,
+        "note": ["", "", ""],
         "phanloai": "Khuyến mãi",
         "discount": "5"
     },
     {
-        "name": "GÀ GIÒN + KHOAI TÂY",
+        "name": "LWS-1200H-7A1V",
         "price": "45000",
-        "image": "/images/discount-8.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/LWS-1200H-7A1V.png",
+        "note": ["", "", ""],
         "phanloai": "Khuyến mãi",
         "discount": "20"
     },
     {
-        "name": "1 ĐÙI GÀ GIÒN",
+        "name": "GST-B500BD-1A        ",
         "price": "63000",
-        "image": "/images/discount-9.png",
-        "note": ["1 phần dưa chua", "  1 Phần cơm", "1 Phần gà"],
+        "image": "./images/GST-B500BD-1A_01.png",
+        "note": ["", "", ""],
         "phanloai": "Khuyến mãi",
         "discount": "25"
     }
